@@ -22,7 +22,7 @@ def fetch_leads():
 
         start_time = yesterday.strftime("%d-%m-%Y %H:%M")
         end_time = now.strftime("%d-%m-%Y %H:%M")
-
+    
         api_key = os.getenv("INDIAMART_API_KEY")
         print(api_key)
         logger.info(f"API Key length: {len(api_key) if api_key else 0}")
